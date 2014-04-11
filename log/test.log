@@ -1,0 +1,624 @@
+  [1m[36m (143.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (14.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (4.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateListings (20140410140710)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (65.3ms)[0m  [1mCREATE TABLE "listings" ("id" serial primary key, "name" character varying(255) NOT NULL, "slug" character varying(255) NOT NULL, "price" decimal(8,2), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (36.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140410140710"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (22.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#show as HTML
+  Parameters: {"slug"=>"hawaii-bungalo"}
+Completed 404 Not Found in 22ms
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#show as HTML
+  Parameters: {"slug"=>"hawaii-bungalo"}
+  Rendered listings/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 61ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#show as JSON
+  Parameters: {"slug"=>"hawaii-bungalo"}
+  Rendered listings/show.json.jbuilder (0.5ms)
+Completed 200 OK in 101ms (Views: 40.1ms | ActiveRecord: 3.3ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#show as JSON
+  Parameters: {"slug"=>"hawaii-bungalo"}
+  Rendered listings/show.json.jbuilder (0.5ms)
+Completed 200 OK in 23ms (Views: 10.3ms | ActiveRecord: 2.3ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (72.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#show as JSON
+  Parameters: {"slug"=>"hawaii-bungalo"}
+  Rendered listings/show.json.jbuilder (0.5ms)
+Completed 200 OK in 101ms (Views: 51.3ms | ActiveRecord: 20.5ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (39.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#show as HTML
+  Parameters: {"slug"=>"hawaii-bungalo"}
+  Rendered listings/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 116ms (Views: 65.6ms | ActiveRecord: 20.8ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#show as JSON
+  Parameters: {"slug"=>"hawaii-bungalo"}
+  Rendered listings/show.json.jbuilder (5.8ms)
+Completed 200 OK in 193ms (Views: 94.1ms | ActiveRecord: 58.9ms)
+  [1m[36m (5.7ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (95.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#show as JSON
+  Parameters: {"slug"=>"hawaii-bungalo"}
+  Rendered listings/show.json.jbuilder (0.5ms)
+Completed 200 OK in 125ms (Views: 52.7ms | ActiveRecord: 31.7ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (28.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#show as JSON
+  Parameters: {"slug"=>"hawaii-bungalo"}
+  Rendered listings/show.json.jbuilder (0.4ms)
+Completed 200 OK in 113ms (Views: 51.7ms | ActiveRecord: 31.6ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#show as JSON
+  Parameters: {"slug"=>"hawaii-bungalo"}
+  Rendered listings/show.json.jbuilder (0.6ms)
+Completed 200 OK in 158ms (Views: 107.4ms | ActiveRecord: 20.7ms)
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (52.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (1.7ms)[0m  BEGIN
+Processing by ListingsController#show as JSON
+  Parameters: {"slug"=>"hawaii-bungalo"}
+  Rendered listings/show.json.jbuilder (0.5ms)
+Completed 200 OK in 158ms (Views: 75.0ms | ActiveRecord: 42.5ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#show as JSON
+  Parameters: {"slug"=>"hawaii-bungalo"}
+  Rendered listings/show.json.jbuilder (0.9ms)
+Completed 200 OK in 24ms (Views: 11.8ms | ActiveRecord: 2.3ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#show as JSON
+  Parameters: {"slug"=>"hawaii-bungalo"}
+  Rendered listings/show.json.jbuilder (0.8ms)
+Completed 200 OK in 23ms (Views: 10.8ms | ActiveRecord: 2.2ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#show as JSON
+  Parameters: {"slug"=>"hawaii-bungalo"}
+  Rendered listings/show.json.jbuilder (0.8ms)
+Completed 200 OK in 24ms (Views: 11.4ms | ActiveRecord: 2.4ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#show as JSON
+  Parameters: {"slug"=>"hawaii-bungalo"}
+Completed 500 Internal Server Error in 14ms
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#show as JSON
+  Parameters: {"slug"=>"hawaii-bungalo"}
+  Rendered listings/show.json.jbuilder (0.4ms)
+Completed 200 OK in 71ms (Views: 58.8ms | ActiveRecord: 2.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (12.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#show as JSON
+  Parameters: {"slug"=>"hawaii-bungalo"}
+  Rendered listings/show.json.jbuilder (0.5ms)
+Completed 200 OK in 23ms (Views: 10.4ms | ActiveRecord: 2.2ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#show as JSON
+  Parameters: {"slug"=>"hawaii-bungalo"}
+  Rendered listings/show.json.jbuilder (0.4ms)
+Completed 200 OK in 22ms (Views: 10.3ms | ActiveRecord: 2.2ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#show as JSON
+  Parameters: {"slug"=>"hawaii-bungalo"}
+  Rendered listings/show.json.jbuilder (0.5ms)
+Completed 200 OK in 22ms (Views: 10.3ms | ActiveRecord: 2.2ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (39.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#show as JSON
+  Parameters: {"slug"=>"hawaii-bungalo"}
+  Rendered listings/show.json.jbuilder (74.0ms)
+Completed 200 OK in 266ms (Views: 148.2ms | ActiveRecord: 65.5ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#show as JSON
+  Parameters: {"slug"=>"hawaii-bungalo"}
+  Rendered listings/show.json.jbuilder (4.9ms)
+Completed 200 OK in 26ms (Views: 14.6ms | ActiveRecord: 2.2ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (50.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#show as JSON
+  Parameters: {"slug"=>"hawaii-bungalo"}
+  Rendered listings/show.json.jbuilder (33.4ms)
+Completed 200 OK in 158ms (Views: 85.9ms | ActiveRecord: 32.1ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#show as JSON
+  Parameters: {"slug"=>"hawaii-bungalo"}
+  Rendered listings/show.json.jbuilder (4.6ms)
+Completed 200 OK in 28ms (Views: 14.5ms | ActiveRecord: 2.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (11.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#show as JSON
+  Parameters: {"slug"=>"hawaii-bungalo"}
+  Rendered listings/show.json.jbuilder (4.4ms)
+Completed 200 OK in 27ms (Views: 14.3ms | ActiveRecord: 2.6ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (30.7ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (11.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#show as JSON
+  Parameters: {"slug"=>"hawaii-bungalo"}
+  Rendered listings/show.json.jbuilder (4.6ms)
+Completed 200 OK in 28ms (Views: 15.5ms | ActiveRecord: 2.6ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+Processing by ListingsController#create as HTML
+  Parameters: {"listing"=>{"name"=>"Jason's House", "price"=>"9238"}}
+  [1m[35m (1.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (358.2ms)[0m  [1mINSERT INTO "listings" ("created_at", "name", "price", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Thu, 10 Apr 2014 14:44:49 UTC +00:00], ["name", "Jason's House"], ["price", #<BigDecimal:104589cd8,'0.9238E4',9(18)>], ["updated_at", Thu, 10 Apr 2014 14:44:49 UTC +00:00]]
+PG::NotNullViolation: ERROR:  null value in column "slug" violates not-null constraint
+DETAIL:  Failing row contains (1, Jason's House, null, 9238.00, 2014-04-10 14:44:49.981928, 2014-04-10 14:44:49.981928).
+: INSERT INTO "listings" ("created_at", "name", "price", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"
+  [1m[35m (117.6ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 546ms
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (62.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (14.5ms)[0m  BEGIN
+  [1m[36m (24.2ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+Processing by ListingsController#create as HTML
+  Parameters: {"listing"=>{"name"=>"Jason's House", "price"=>"9238"}}
+Completed 500 Internal Server Error in 1ms
+  [1m[35m (13.8ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (28.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (8.3ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+Processing by ListingsController#create as HTML
+  Parameters: {"listing"=>{"name"=>"Jason's House", "price"=>"9238"}}
+Completed 500 Internal Server Error in 1ms
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (51.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (40.9ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+Processing by ListingsController#create as HTML
+  Parameters: {"listing"=>{"name"=>"Jason's House", "price"=>"9238"}}
+Completed 500 Internal Server Error in 1ms
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (8.6ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+Processing by ListingsController#create as HTML
+  Parameters: {"listing"=>{"name"=>"Jason's House", "price"=>"9238"}}
+Completed 500 Internal Server Error in 1ms
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (9.0ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+Processing by ListingsController#create as HTML
+  Parameters: {"listing"=>{"name"=>"Jason's House", "price"=>"9238"}}
+Completed 500 Internal Server Error in 1ms
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (28.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (229.8ms)[0m  BEGIN
+  [1m[36m (42.1ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+Processing by ListingsController#create as HTML
+  Parameters: {"listing"=>{"name"=>"Jason's House", "price"=>"9238"}}
+  [1m[35m (40.4ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (986.1ms)[0m  [1mINSERT INTO "listings" ("created_at", "name", "price", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Thu, 10 Apr 2014 20:30:00 UTC +00:00], ["name", "Jason's House"], ["price", #<BigDecimal:104594c00,'0.9238E4',9(18)>], ["updated_at", Thu, 10 Apr 2014 20:30:00 UTC +00:00]]
+PG::NotNullViolation: ERROR:  null value in column "slug" violates not-null constraint
+DETAIL:  Failing row contains (2, Jason's House, null, 9238.00, 2014-04-10 20:30:00.683565, 2014-04-10 20:30:00.683565).
+: INSERT INTO "listings" ("created_at", "name", "price", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"
+  [1m[35m (58.9ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 1208ms
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+Processing by ListingsController#create as HTML
+  Parameters: {"listing"=>{"name"=>"Jason's House", "price"=>"9238"}}
+Completed 500 Internal Server Error in 8ms
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (28.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (7.4ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+Processing by ListingsController#create as HTML
+  Parameters: {"listing"=>{"name"=>"Jason's House", "price"=>"9238"}}
+Completed 500 Internal Server Error in 8ms
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (39.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (29.6ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+Processing by ListingsController#create as HTML
+  Parameters: {"listing"=>{"name"=>"Jason's House", "price"=>"9238"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (79.3ms)[0m  [1mINSERT INTO "listings" ("created_at", "name", "price", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Thu, 10 Apr 2014 20:31:58 UTC +00:00], ["name", "Jason's House"], ["price", #<BigDecimal:103b35598,'0.9238E4',9(18)>], ["updated_at", Thu, 10 Apr 2014 20:31:58 UTC +00:00]]
+PG::NotNullViolation: ERROR:  null value in column "slug" violates not-null constraint
+DETAIL:  Failing row contains (3, Jason's House, null, 9238.00, 2014-04-10 20:31:58.840603, 2014-04-10 20:31:58.840603).
+: INSERT INTO "listings" ("created_at", "name", "price", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 94ms
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (62.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (28.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (39.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (7.3ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+Processing by ListingsController#create as HTML
+  Parameters: {"listing"=>{"name"=>"Jason's House", "price"=>"9238"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (171.6ms)[0m  [1mINSERT INTO "listings" ("created_at", "name", "price", "slug", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Thu, 10 Apr 2014 20:36:00 UTC +00:00], ["name", "Jason's House"], ["price", #<BigDecimal:10367bb88,'0.9238E4',9(18)>], ["slug", "jason_s_house"], ["updated_at", Thu, 10 Apr 2014 20:36:00 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to 
+Completed 500 Internal Server Error in 191ms
+  [1m[36m (13.4ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (5.6ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (6.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (6.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (25.7ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (40.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (20.9ms)[0m  BEGIN
+  [1m[36m (32.8ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+  [1m[35m (18.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (73.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (30.6ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (50.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (30.5ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (18.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+Processing by ListingsController#create as HTML
+Completed 400 Bad Request in 1ms
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+Processing by ListingsController#create as JSON
+  Parameters: {"listing"=>{"name"=>"Jason's House", "price"=>"9238"}}
+Completed 500 Internal Server Error in 116ms
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+Processing by ListingsController#create as JSON
+  Parameters: {"listing"=>{"name"=>"Jason's House", "price"=>"9238"}}
+  [1m[35m (65.6ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (262.5ms)[0m  [1mINSERT INTO "listings" ("created_at", "name", "price", "slug", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Thu, 10 Apr 2014 23:37:33 UTC +00:00], ["name", "Jason's House"], ["price", #<BigDecimal:104b51d78,'0.9238E4',9(18)>], ["slug", "jason_s_house"], ["updated_at", Thu, 10 Apr 2014 23:37:33 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered listings/show.json.jbuilder (0.4ms)
+Completed 201 Created in 376ms (Views: 23.7ms | ActiveRecord: 328.6ms)
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+  [1m[35m (15.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+Processing by ListingsController#create as JSON
+  Parameters: {"listing"=>{"name"=>"Jason's House", "price"=>"9238"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (6.4ms)[0m  [1mINSERT INTO "listings" ("created_at", "name", "price", "slug", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Thu, 10 Apr 2014 23:37:41 UTC +00:00], ["name", "Jason's House"], ["price", #<BigDecimal:10351df20,'0.9238E4',9(18)>], ["slug", "jason_s_house"], ["updated_at", Thu, 10 Apr 2014 23:37:41 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered listings/show.json.jbuilder (0.4ms)
+Completed 201 Created in 33ms (Views: 11.3ms | ActiveRecord: 7.2ms)
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#create as HTML
+  Parameters: {"listing"=>{"name"=>"Jason's House", "price"=>"9238"}}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (6.8ms)[0m  INSERT INTO "listings" ("created_at", "name", "price", "slug", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Thu, 10 Apr 2014 23:38:12 UTC +00:00], ["name", "Jason's House"], ["price", #<BigDecimal:104c39678,'0.9238E4',9(18)>], ["slug", "jason_s_house"], ["updated_at", Thu, 10 Apr 2014 23:38:12 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/listings/jason_s_house
+Completed 302 Found in 26ms (ActiveRecord: 9.6ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+Processing by ListingsController#create as HTML
+  Parameters: {"listing"=>{"name"=>"Jason's House", "price"=>"9238"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (17.6ms)[0m  [1mINSERT INTO "listings" ("created_at", "name", "price", "slug", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Thu, 10 Apr 2014 23:38:23 UTC +00:00], ["name", "Jason's House"], ["price", #<BigDecimal:102f38bc8,'0.9238E4',9(18)>], ["slug", "jason_s_house"], ["updated_at", Thu, 10 Apr 2014 23:38:23 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/listings/jason_s_house
+Completed 302 Found in 32ms (ActiveRecord: 18.2ms)
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#create as HTML
+  Parameters: {"listing"=>{"name"=>"Jason's House", "price"=>"9238"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (7.0ms)[0m  INSERT INTO "listings" ("created_at", "name", "price", "slug", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Thu, 10 Apr 2014 23:38:28 UTC +00:00], ["name", "Jason's House"], ["price", #<BigDecimal:105173b48,'0.9238E4',9(18)>], ["slug", "jason_s_house"], ["updated_at", Thu, 10 Apr 2014 23:38:28 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/listings/jason_s_house
+Completed 302 Found in 27ms (ActiveRecord: 10.0ms)
+  [1m[35mListing Load (26.0ms)[0m  SELECT "listings".* FROM "listings" ORDER BY "listings"."id" DESC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#create as JSON
+  Parameters: {"listing"=>{"name"=>"Jason's House", "price"=>"9238"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (6.9ms)[0m  INSERT INTO "listings" ("created_at", "name", "price", "slug", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Thu, 10 Apr 2014 23:39:09 UTC +00:00], ["name", "Jason's House"], ["price", #<BigDecimal:103324318,'0.9238E4',9(18)>], ["slug", "jason_s_house"], ["updated_at", Thu, 10 Apr 2014 23:39:09 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered listings/show.json.jbuilder (0.6ms)
+Completed 201 Created in 37ms (Views: 10.4ms | ActiveRecord: 9.6ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#create as JSON
+  Parameters: {"listing"=>{"name"=>"Jason's House", "price"=>"9238"}}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (63.7ms)[0m  INSERT INTO "listings" ("created_at", "name", "price", "slug", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Thu, 10 Apr 2014 23:39:59 UTC +00:00], ["name", "Jason's House"], ["price", #<BigDecimal:101781750,'0.9238E4',9(18)>], ["slug", "jason_s_house"], ["updated_at", Thu, 10 Apr 2014 23:39:59 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered listings/show.json.jbuilder (24.5ms)
+Completed 201 Created in 168ms (Views: 58.9ms | ActiveRecord: 66.8ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#create as JSON
+  Parameters: {"listing"=>{"name"=>"Jason's House", "price"=>"9238"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (7.1ms)[0m  INSERT INTO "listings" ("created_at", "name", "price", "slug", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Thu, 10 Apr 2014 23:40:22 UTC +00:00], ["name", "Jason's House"], ["price", #<BigDecimal:105144168,'0.9238E4',9(18)>], ["slug", "jason_s_house"], ["updated_at", Thu, 10 Apr 2014 23:40:22 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered listings/show.json.jbuilder (4.8ms)
+Completed 201 Created in 41ms (Views: 14.5ms | ActiveRecord: 10.1ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#create as HTML
+  Parameters: {"listing"=>{"name"=>"invalid value"}}
+  Rendered listings/_form.html.erb (127.4ms)
+  Rendered listings/new.html.erb within layouts/application (172.7ms)
+Completed 200 OK in 3401ms (Views: 3388.3ms | ActiveRecord: 2.2ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#create as HTML
+  Parameters: {"listing"=>{"name"=>"invalid value"}}
+  Rendered listings/_form.html.erb (28.1ms)
+  Rendered listings/new.html.erb within layouts/application (35.2ms)
+Completed 200 OK in 76ms (Views: 64.5ms | ActiveRecord: 2.2ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+Processing by ListingsController#create as HTML
+  Parameters: {"listing"=>{"name"=>"Jason's House", "price"=>"9238"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (66.9ms)[0m  [1mINSERT INTO "listings" ("created_at", "name", "price", "slug", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Thu, 10 Apr 2014 23:40:45 UTC +00:00], ["name", "Jason's House"], ["price", #<BigDecimal:1034abc90,'0.9238E4',9(18)>], ["slug", "jason_s_house"], ["updated_at", Thu, 10 Apr 2014 23:40:45 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/listings/jason_s_house
+Completed 302 Found in 82ms (ActiveRecord: 67.6ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by ListingsController#create as HTML
+  Parameters: {"listing"=>{"name"=>"Jason's House", "price"=>"9238"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "listings" ("created_at", "name", "price", "slug", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Thu, 10 Apr 2014 23:40:45 UTC +00:00], ["name", "Jason's House"], ["price", #<BigDecimal:103449e78,'0.9238E4',9(18)>], ["slug", "jason_s_house"], ["updated_at", Thu, 10 Apr 2014 23:40:45 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/listings/jason_s_house
+Completed 302 Found in 4ms (ActiveRecord: 0.9ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+Processing by ListingsController#create as JSON
+  Parameters: {"listing"=>{"name"=>"Jason's House", "price"=>"9238"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "listings" ("created_at", "name", "price", "slug", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Thu, 10 Apr 2014 23:40:45 UTC +00:00], ["name", "Jason's House"], ["price", #<BigDecimal:103413080,'0.9238E4',9(18)>], ["slug", "jason_s_house"], ["updated_at", Thu, 10 Apr 2014 23:40:45 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 53ms (Views: 49.6ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by ListingsController#create as HTML
+  Parameters: {"listing"=>{"name"=>"invalid value"}}
+  Rendered listings/_form.html.erb (16.8ms)
+Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+Processing by ListingsController#create as HTML
+  Parameters: {"listing"=>{"name"=>"invalid value"}}
+  Rendered listings/_form.html.erb (3.3ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (62.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#show as JSON
+  Parameters: {"slug"=>"hawaii-bungalo"}
+  Rendered listings/show.json.jbuilder (24.2ms)
+Completed 200 OK in 116ms (Views: 54.7ms | ActiveRecord: 16.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (28.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#show as JSON
+  Parameters: {"slug"=>"hawaii-bungalo"}
+  Rendered listings/show.json.jbuilder (69.7ms)
+Completed 200 OK in 239ms (Views: 176.4ms | ActiveRecord: 28.5ms)
+  [1m[36m (1.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (79.8ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+Processing by ListingsController#create as HTML
+  Parameters: {"listing"=>{"name"=>"Jason's House", "price"=>"9238"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (112.0ms)[0m  [1mINSERT INTO "listings" ("created_at", "name", "price", "slug", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Thu, 10 Apr 2014 23:45:41 UTC +00:00], ["name", "Jason's House"], ["price", #<BigDecimal:103f33fa0,'0.9238E4',9(18)>], ["slug", "jason_s_house"], ["updated_at", Thu, 10 Apr 2014 23:45:41 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/listings/jason_s_house
+Completed 302 Found in 232ms (ActiveRecord: 114.3ms)
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by ListingsController#create as HTML
+  Parameters: {"listing"=>{"name"=>"Jason's House", "price"=>"9238"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "listings" ("created_at", "name", "price", "slug", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Thu, 10 Apr 2014 23:45:41 UTC +00:00], ["name", "Jason's House"], ["price", #<BigDecimal:103f0b550,'0.9238E4',9(18)>], ["slug", "jason_s_house"], ["updated_at", Thu, 10 Apr 2014 23:45:41 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/listings/jason_s_house
+Completed 302 Found in 4ms (ActiveRecord: 0.9ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by ListingsController#create as JSON
+  Parameters: {"listing"=>{"name"=>"Jason's House", "price"=>"9238"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "listings" ("created_at", "name", "price", "slug", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Thu, 10 Apr 2014 23:45:41 UTC +00:00], ["name", "Jason's House"], ["price", #<BigDecimal:103e78fc0,'0.9238E4',9(18)>], ["slug", "jason_s_house"], ["updated_at", Thu, 10 Apr 2014 23:45:41 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 4ms (Views: 0.9ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by ListingsController#create as HTML
+  Parameters: {"listing"=>{"name"=>"invalid value"}}
+  Rendered listings/_form.html.erb (70.9ms)
+Completed 200 OK in 229ms (Views: 227.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by ListingsController#create as HTML
+  Parameters: {"listing"=>{"name"=>"invalid value"}}
+  Rendered listings/_form.html.erb (3.2ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (18.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#show as JSON
+  Parameters: {"slug"=>"hawaii-bungalo"}
+  Rendered listings/show.json.jbuilder (56.5ms)
+Completed 200 OK in 137ms (Views: 108.9ms | ActiveRecord: 18.7ms)
+  [1m[36m (1.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36m (27.0ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+Processing by ListingsController#create as HTML
+  Parameters: {"listing"=>{"name"=>"Jason's House", "price"=>"9238"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (81.0ms)[0m  [1mINSERT INTO "listings" ("created_at", "name", "price", "slug", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Thu, 10 Apr 2014 23:46:02 UTC +00:00], ["name", "Jason's House"], ["price", #<BigDecimal:104bcba10,'0.9238E4',9(18)>], ["slug", "jason_s_house"], ["updated_at", Thu, 10 Apr 2014 23:46:02 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/listings/jason_s_house
+Completed 302 Found in 115ms (ActiveRecord: 81.9ms)
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+Processing by ListingsController#create as HTML
+  Parameters: {"listing"=>{"name"=>"Jason's House", "price"=>"9238"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "listings" ("created_at", "name", "price", "slug", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Thu, 10 Apr 2014 23:46:02 UTC +00:00], ["name", "Jason's House"], ["price", #<BigDecimal:104b72960,'0.9238E4',9(18)>], ["slug", "jason_s_house"], ["updated_at", Thu, 10 Apr 2014 23:46:02 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/listings/jason_s_house
+Completed 302 Found in 4ms (ActiveRecord: 0.9ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ListingsController#create as JSON
+  Parameters: {"listing"=>{"name"=>"Jason's House", "price"=>"9238"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "listings" ("created_at", "name", "price", "slug", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Thu, 10 Apr 2014 23:46:02 UTC +00:00], ["name", "Jason's House"], ["price", #<BigDecimal:104b3beb0,'0.9238E4',9(18)>], ["slug", "jason_s_house"], ["updated_at", Thu, 10 Apr 2014 23:46:02 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 5ms (Views: 0.9ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by ListingsController#create as HTML
+  Parameters: {"listing"=>{"name"=>"invalid value"}}
+  Rendered listings/_form.html.erb (59.8ms)
+Completed 200 OK in 232ms (Views: 230.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by ListingsController#create as HTML
+  Parameters: {"listing"=>{"name"=>"invalid value"}}
+  Rendered listings/_form.html.erb (3.3ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
